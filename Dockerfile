@@ -27,6 +27,9 @@ RUN tar -C /usr/local/bin -xzf /tmp/litestream.tar.gz
 # Add litestream config
 COPY etc/litestream.yml /etc/litestream.yml
 
+LABEL io.buildpacks.builder.metadata="{\"version\":\"0.10.2\"}"
+
+
 # Deal with memos
 WORKDIR /usr/local/memos
 
